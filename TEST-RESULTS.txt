@@ -1,0 +1,26 @@
+Local validation performed when packaging this repository.
+These are smoke checks only; no live Mattermost migration was performed.
+
+$ bash -n /mnt/data/offlineops-mattermost-migration-wizard/mattermost-migration-wizard.sh
+status: 0
+
+
+$ bash /mnt/data/offlineops-mattermost-migration-wizard/mattermost-migration-wizard.sh --self-test
+status: 0
+PASS: archive path validation (safe paths accepted; traversal rejected).
+PASS: banner and wizard functions loaded.
+NOTE: this does not perform a real Mattermost migration.
+
+
+$ bash /mnt/data/offlineops-mattermost-migration-wizard/tests/smoke-test.sh
+status: 0
+PASS: archive path validation (safe paths accepted; traversal rejected).
+PASS: banner and wizard functions loaded.
+NOTE: this does not perform a real Mattermost migration.
+
+Smoke tests passed (local checks only; no migration performed).
+
+
+$ shellcheck
+status: not installed in this environment; CI installs it
+

@@ -1,0 +1,12 @@
+# Local/editor files
+.DS_Store
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Logs and temporary output
+*.log
+*.tmp
+*.tar.gz
+.env
